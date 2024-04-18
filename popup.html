@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Font Changer</title>
+  <title>Dyslexia Helper</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
     }
-    select, input[type="number"] {
+
+    select,
+    input[type="number"] {
       margin-bottom: 10px;
     }
   </style>
 </head>
-<body>
-  <h2>Font Changer</h2>
-  <label for="font-select">Select Font:</label>
-  <select id="font-select">
-    <option value="Arial, sans-serif">Arial</option>
-    <option value="Times New Roman, serif">Times New Roman</option>
-    <option value="Courier New, monospace">Courier New</option>
-  </select>
-  <label for="text-size">Text Size:</label>
-  <input type="number" id="text-size" value="12" min="6" max="72">
-  <button id="apply-font">Apply Font</button>
 
-  <script src="popup.js"></script>
+<body>
+  <div class="container">
+    <h2 class="title">Dyslexia Helper</h2>
+    <div class="form-group">
+      <label for="font-select">Select Font:</label>
+      <select id="font-select">
+        <option value="Arial, sans-serif">Arial</option>
+        <option value="Times New Roman, serif">Times New Roman</option>
+        <option value="Courier New, monospace">Courier New</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="text-size">Text Size:</label>
+      <input type="number" id="text-size" value="12" min="6" max="72">
+    </div>
+    <div class="form-group">
+      <label for="text-spacing">Text Spacing:</label>
+      <div class="spacing-controls">
+        <button id="decrease-spacing">-</button>
+        <span id="text-spacing-value">0</span>
+        <button id="increase-spacing">+</button>
+      </div>
+    </div>
+
+    <button id="apply-font">Apply Changes</button>
+
+    <script src="popup.js"></script>
+  </div>
 </body>
+
 </html>
