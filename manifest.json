@@ -1,16 +1,16 @@
 {
-    "manifest_version": 3,
-    "name": "Font Changer",
-    "version": "1.0",
-    "description": "Change the font style on webpages.",
-    "permissions": ["activeTab", "scripting"],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icon.png"
-    },
-    "icons": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon.png"
-    }
+  "manifest_version": 3,
+  "name": "Font Changer",
+  "version": "1.0",
+  "description": "Change the font style on webpages.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
 }
